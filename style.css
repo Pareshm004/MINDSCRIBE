@@ -45,14 +45,14 @@ header {
 /* Navigation */
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 70px;
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
 }
 
 nav a {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Inspiration', cursive;
   font-size: 26px;
   color: white;
   text-decoration: none;
@@ -61,9 +61,9 @@ nav a {
 }
 
 nav a:hover {
-  color: #d1f5f8;
-  transform: scale(1.1);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  color: #87bbff;
+  transform: scale(10);
+  text-shadow: 0 0 6px rgba(103, 255, 247, 0.6);
 }
 
 
@@ -73,8 +73,8 @@ nav a:hover::after {
 }
 /* Style for nav links (Write-up, etc.) */
 .nav-link {
-  font-family: 'Dancing Script', cursive;
-  font-size: 26px;
+  font-family: 'Inspiration', cursive;
+  font-size: 42px;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -82,7 +82,7 @@ nav a:hover::after {
 }
 
 .nav-link:hover {
-  color: #d1f5f8;
+  color: #79ffeb;
   transform: scale(1.1);
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
