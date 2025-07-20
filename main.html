@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Nanum+Gothic&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
 
@@ -25,43 +27,47 @@
         <li><a href="#"><img src="assets/icon.png" alt="profile icon" class="profile-icon" /></a></li>
       
         <div class="dropdown">
-        <button class="dropbtn">Options</button>
+        <li><a href="#"><img src="assets/down-arrow.png" alt="down-arrow" class="down-arrow" /></a></li>
         <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="#">Profile</a>
+        <a href="#">Archives</a>
+        <a href="#">LogOut</a>
         </div>
       </div>
       </ul>
     </nav>
-
   </header>
-<!-- Explore Now flashing button -->
+
+  <!-- Explore Now button -->
   <section class="explore-section">
     <a href="#text" class="explore-now">Explore Now ↓</a>
   </section>
 
-  
   <main>
     <section class="intro" id="text-section">
       <div class="text" id="text">
-        <p>MindScribe is more than just a digital journal — it's your intelligent, always-listening mental wellness companion. Designed with care and powered by AI, MindScribe helps you capture your innermost thoughts, emotions, and everyday moments effortlessly. Whether you're radiating happiness, feeling a bit anxious, stuck in overthinking, or simply reflecting on your day, MindScribe doesn’t just store your words — it understands them.
-
-It reads between the lines of your journal entries to detect emotional patterns, track mood fluctuations, and provide personalized insights that help you better understand yourself over time. With each entry, it builds a deeper picture of your emotional well-being, gently nudging you toward clarity, balance, and growth.
-
-No judgment. No pressure. No noise.
-Just you, your thoughts, and a touch of AI magic. ✨
-
-So go ahead — write your heart out.
-Let your mind speak. We'll take care of the rest.</p>
+        <p>MindScribe is more than just a digital journal — it's your intelligent, always-listening mental wellness companion. Designed with care and powered by AI, MindScribe helps you capture your innermost thoughts, emotions, and everyday moments effortlessly. Whether you're radiating happiness, feeling a bit anxious, stuck in overthinking, or simply reflecting on your day, MindScribe doesn’t just store your words — it understands them.</p>
+        <p>It reads between the lines of your journal entries to detect emotional patterns, track mood fluctuations, and provide personalized insights that help you better understand yourself over time. With each entry, it builds a deeper picture of your emotional well-being, gently nudging you toward clarity, balance, and growth.</p>
+        <p>No judgment. No pressure. No noise. Just you, your thoughts, and a touch of AI magic. ✨</p>
+        <p>So go ahead — write your heart out. Let your mind speak. We'll take care of the rest.</p>
       </div>
       <div class="images">
         <img src="assets/img1.png" alt="journal illustration" class="img1"/>
         <img src="assets/img2.png" alt="boy writing" class="img2"/>
       </div>
     </section>
-    
   </main>
+
+  <script>
+  const exploreBtn = document.querySelector('.explore-now');
+  const textBlock = document.querySelector('.text');
+
+  exploreBtn.addEventListener('click', function () {
+    // Add the visible class to trigger CSS animation
+    textBlock.classList.add('visible');
+  });
+</script>
+
 
 </body>
 </html>
