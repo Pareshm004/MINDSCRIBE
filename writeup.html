@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write-up</title>
+
+    <link rel="icon" type="image/png" href="assets/M-removebg.png">
     <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +16,27 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
+    <header class="header" id="header" style="border-bottom: 2px solid; border-color: #048591;box-shadow: 0px 4px 6px rgba(7, 91, 127, 0.618);">
         <a href="main.html">
         <img class="M" src="assets/M.png" alt="" width="100" height="100"> </a>
         <h1 class="write"> Write-up</h1>
     </header>
     <p class="free">
-           It’s completely free — not just in price, but in spirit.
+           It’s completely <b>free</b> — not just in price, but in spirit.
 Free from judgment, free from pressure, free from distractions. MindScribe is your quiet corner in a loud world — a place where your thoughts flow freely and your emotions are met with empathy, not analysis. Here, the only thing AI does is listen, reflect, and gently help you understand yourself better. No filters. No noise. Just you, your words, and a bit of mindful tech magic.
     </p>
     <div class="writing">
-    <input type="text" class ="inp" placeholder="Type here" style="width: 1200px; height: 750px;">
+    <textarea id="journalEntry" placeholder="How are you feeling today? What's on your mind?" rows="10"></textarea>
+    <button id="analyzeBtn">Scribe My Thoughts</button>
+
+        <div id="analysisResults" class="results-box">
+            <h2>Your MindScribe Insight:</h2>
+            <p><strong>Emotion:</strong> <span id="emotionDisplay"></span></p>
+            <p><strong>Intensity:</strong> <span id="intensityDisplay"></span></p>
+            <p><strong>MindScribe's Tip:</strong> <span id="tipDisplay"></span></p>
+            <p class="small-text">(Disclaimer: MindScribe is a companion, not a substitute for professional help.)</p>
+        </div>
+
     </div>
 </body>
 </html>
