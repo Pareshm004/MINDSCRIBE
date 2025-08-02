@@ -160,7 +160,24 @@ main {
   line-height: 1.8;
   color: #2e2e2e;
   margin-left: -136px;
-  margin-top: 150px;
+  margin-top: -75px;
+}
+.tt{
+  font-size: 75px;
+  color: #0066ff;
+  font-family: 'Inspiration', cursive;
+  text-decoration: none;
+  margin-left: -175px;
+  padding-bottom: 90px;
+  padding-top: 75px;
+}
+.typing-text{
+  font-size: 45px;
+  color: #5c8ded;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px dashed transparent;
 }
 /* Flashing Explore Now button */
 /* Explore Now Section */
@@ -195,10 +212,10 @@ main {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-right: -100px;
+  gap: 25px;
+  margin-right: -95px;
   margin-top: 10px;
-  padding-left: 100px;
+  
 }
 .M {
   max-width: 100%;
